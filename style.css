@@ -141,6 +141,49 @@ a:hover {
     max-width: 420px;
 }
 
+.stack-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 2px;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.stack-badge.html {
+    color: #fff;
+    background-color: #F26449;
+}
+
+.stack-badge.angular {
+    color: #fff;
+    background-color: #D6052F;
+}
+
+.stack-badge.django {
+    color: #fff;
+    background-color: #092C1E;
+}
+
+.stack-badge.python {
+    color: #fff;
+    background-color: #346A98;
+}
+
+.stack-badge.style {
+    color: #fff;
+    background-color: #CE679A;
+}
+
+.stack-badge.util {
+    color: #fff;
+    background-color: #026BB5;
+}
+
+.stack-badge.script {
+    color: #000;
+    background-color: #EAD41D;
+}
+
 .certificate__url {
     display: block;
     text-decoration: none;

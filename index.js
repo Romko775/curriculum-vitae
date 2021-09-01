@@ -1,5 +1,5 @@
 /**
- * @type {[{stack: string, responsibilities: string[], project: {name: string, url: string}, description: string, company: string, dates: string, position: string}]}
+ * @type {[{stack: [{type: string, name: string}], responsibilities: string[], project: {name: string, url: string}, description: string, company: string, dates: string, position: string}]}
  */
 const workExperienceArr = [
     {
@@ -16,7 +16,13 @@ const workExperienceArr = [
             'Architecture building',
             'App optimisation'
         ],
-        stack: 'Typescript, Angular (v11), Angular Universal, webpack, SCSS, etc.',
+        stack: [
+            {type: 'script', name: 'Typescript'},
+            {type: 'angular', name: 'Angular (v11)'},
+            {type: 'angular', name: 'Angular Universal'},
+            {type: 'util', name: 'Webpack'},
+            {type: 'style', name: 'SCSS'},
+        ],
     },
     {
         company: 'Sciforce, Lviv',
@@ -32,7 +38,13 @@ const workExperienceArr = [
             'New features designing and developing',
             'Requirements clarification and communication with the stakeholders'
         ],
-        stack: 'Typescript, Angular (v4-11), webpack, SCSS, Node.js, etc.',
+        stack: [
+            {type: 'script', name: 'Typescript'},
+            {type: 'angular', name: 'Angular (v4-11)'},
+            {type: 'util', name: 'Webpack'},
+            {type: 'style', name: 'SCSS'},
+            {type: 'script', name: 'Node.js'},
+        ],
     },
     {
         company: 'GoITeens',
@@ -44,7 +56,11 @@ const workExperienceArr = [
         position: 'Frontend teacher',
         description: 'Worked as a teacher for kids.',
         responsibilities: null,
-        stack: 'HTML 5, CSS, SCSS',
+        stack: [
+            {type: 'html', name: 'HTML 5'},
+            {type: 'style', name: 'CSS'},
+            {type: 'style', name: 'SCSS'},
+        ],
     },
     {
         company: 'Nextgen',
@@ -61,7 +77,14 @@ const workExperienceArr = [
             'Developing PoC, MVP',
             'Estimating and planning'
         ],
-        stack: 'Typescript, Angular (v9-11), Python 3, Django 3, Django Rest Framework, JWT',
+        stack: [
+            {type: 'script', name: 'Typescript'},
+            {type: 'angular', name: 'Angular (v9-11)'},
+            {type: 'python', name: 'Python 3'},
+            {type: 'django', name: 'Django 3'},
+            {type: 'django', name: 'Django Rest Framework'},
+            {type: 'util', name: 'JWT'},
+        ],
     },
     {
         company: 'Sciforce, Lviv',
@@ -78,7 +101,13 @@ const workExperienceArr = [
             'New features developing',
             'Requirements clarification for the stakeholders'
         ],
-        stack: 'Django Render, jQuery, Ajax, SCSS, Gulp',
+        stack: [
+            {type: 'django', name: 'Django 1.1'},
+            {type: 'script', name: 'jQuery'},
+            {type: 'script', name: 'Ajax'},
+            {type: 'style', name: 'SCSS'},
+            {type: 'util', name: 'Gulp'},
+        ],
     },
     {
         company: 'Freelance Web Developer',
@@ -90,7 +119,21 @@ const workExperienceArr = [
         position: 'Web developer',
         description: '',
         responsibilities: [],
-        stack: 'HTML, CSS, SCSS, Javascript, Typescript, Angular, Python 3, Django 3, CI/CD, Nginx'
+        stack: [
+            {type: 'html', name: 'HTML'},
+            {type: 'style', name: 'CSS'},
+            {type: 'style', name: 'SCSS'},
+            {type: 'script', name: 'Javascript'},
+            {type: 'script', name: 'Typescript'},
+            {type: 'script', name: 'Node.js'},
+            {type: 'angular', name: 'Angular'},
+            {type: 'python', name: 'Python 3'},
+            {type: 'django', name: 'Django 3'},
+            {type: 'util', name: 'CI/CD'},
+            {type: 'util', name: 'Nginx'},
+            {type: 'util', name: 'Gulp'},
+            {type: 'util', name: 'Webpack'},
+        ]
     },
     {
         company: 'Own Project',
@@ -102,7 +145,14 @@ const workExperienceArr = [
         position: 'Full Stack developer',
         description: 'Free Ukraine popular banks currency tracking tool.',
         responsibilities: [],
-        stack: 'Typescript, Angular (v11-12), Python 3, Django 3, Django Rest Framework, Beautiful Soup'
+        stack: [
+            {type: 'script', name: 'Typescript'},
+            {type: 'angular', name: 'Angular (v11-12)'},
+            {type: 'python', name: 'Python 3'},
+            {type: 'django', name: 'Django 3'},
+            {type: 'django', name: 'Django Rest Framework'},
+            {type: 'django', name: 'Beautiful Soup'},
+        ]
     }
 ];
 
@@ -125,7 +175,7 @@ const technicalSkills = [
     {
         type: 'Backend',
         items: [
-            'Python 3, Django (inc. DRF',
+            'Python 3, Django (inc. DRF)',
             'NodeJS, Express, Nest JS',
             'PostgreSQL, MySQL, SQLite'
         ]
@@ -176,6 +226,13 @@ function createList(header, items) {
     return list;
 }
 
+/**
+ * @param {{type: string, name: string}} item
+ */
+function createStackBadge(item) {
+    return `<span class="stack-badge ${item.type}">${item.name}</span>`;
+}
+
 function main() {
     const workExperienceBlock = document.getElementById('workExperienceBlock');
     const technicalSkillsBlock = document.getElementById('technicalSkillsBlock')
@@ -206,7 +263,7 @@ function main() {
 
         const infoBlockStack = document.createElement('div');
         infoBlockStack.innerHTML = `
-            <b>Stack:</b> ${el.stack}
+            <b>Stack:</b> ${el.stack.map(s => createStackBadge(s)).join('')}
         `;
 
         [
@@ -242,7 +299,10 @@ function wait(fn, time) {
 document.addEventListener('DOMContentLoaded', function () {
     main();
     wait(() => loader.classList.add('fade'), 1000)
-        .then(() => wait(() => {content.style.display = 'block'; loader.style.display = 'none';}, 500))
+        .then(() => wait(() => {
+            content.style.display = 'block';
+            loader.style.display = 'none';
+        }, 500))
         .then(() => wait(() => content.classList.remove('fade'), 500))
         .then();
 }, false);
