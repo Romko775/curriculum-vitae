@@ -81,6 +81,18 @@ const workExperienceArr = [
         stack: 'Django Render, jQuery, Ajax, SCSS, Gulp',
     },
     {
+        company: 'Freelance Web Developer',
+        dates: 'Jan 2018 - Present',
+        project: {
+            name: 'Freelance',
+            url: ''
+        },
+        position: 'Web developer',
+        description: '',
+        responsibilities: [],
+        stack: 'HTML, CSS, SCSS, Javascript, Typescript, Angular, Python 3, Django 3, CI/CD, Nginx'
+    },
+    {
         company: 'Own Project',
         dates: '',
         project: {
@@ -88,7 +100,7 @@ const workExperienceArr = [
             url: 'https://currency-tracker.cyou/'
         },
         position: 'Full Stack developer',
-        description: 'Free Ukraine popular banks currency tracking tool',
+        description: 'Free Ukraine popular banks currency tracking tool.',
         responsibilities: [],
         stack: 'Typescript, Angular (v11-12), Python 3, Django 3, Django Rest Framework, Beautiful Soup'
     }

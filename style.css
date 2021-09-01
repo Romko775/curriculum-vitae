@@ -17,7 +17,7 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6, a {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', sans-serif;
 }
 
 h3 {
@@ -94,7 +94,7 @@ a:hover {
     text-transform: uppercase;
     background-color: #000;
     padding: 10px 15px;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', sans-serif;
 }
 
 .block {
@@ -113,7 +113,7 @@ a:hover {
     color: #FF0000;
 }
 
-.info-block:not(:last-of-type) {
+.info-block {
     margin-bottom: 50px;
 }
 
