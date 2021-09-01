@@ -87,7 +87,7 @@ const workExperienceArr = [
             name: 'Currency Tracker',
             url: 'https://currency-tracker.cyou/'
         },
-        position: 'Angular developer',
+        position: 'Full Stack developer',
         description: 'Free Ukraine popular banks currency tracking tool',
         responsibilities: [],
         stack: 'Typescript, Angular (v11-12), Python 3, Django 3, Django Rest Framework, Beautiful Soup'
