@@ -1,31 +1,46 @@
 name: Build and Deploy App
 
+#on:
+#  pull_request:
+#    branches:
+#      - main
+#    types:
+#      - closed
+#on:
+#  push:
+#    branches:
+#      - develop
+
 on:
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
-    types:
-      - closed
+    types: [closed]
 
 jobs:
-  if_merged:
-    if: github.event.pull_request.merged == true
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+
       - name: Adding Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
+
       - name: Install Dependencies
         run: npm install
+
       - name: Build App
         run: npm run build
+
       - name: Deploy to gh pages
         run: |
           npx angular-cli-ghpages --dir=dist/curriculum-vitae/browser
         env:
           CI: true
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
