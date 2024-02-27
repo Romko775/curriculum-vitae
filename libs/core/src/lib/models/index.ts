@@ -1,3 +1,4 @@
+export * from './_certification.model';
 export * from './_company.model';
 export * from './_contact.model';
 export * from './_date-alike.model';

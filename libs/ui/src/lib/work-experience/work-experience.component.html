@@ -7,7 +7,9 @@
       </div>
     </div>
     <div>
-      <h4 class="fs-6"><a class="link-dark" [href]="exp.project.url">{{ exp.project.name }}</a> - {{ exp.position }}</h4>
+      <h4 class="fs-6">
+        <a class="link-dark" [href]="exp.project.url" target="_blank">{{ exp.project.name }}</a> - {{ exp.position }}
+      </h4>
       <p>{{ exp.description }}</p>
       <curriculum-vitae-titled-list [title]="'Responsibilities'"
                                     [items]="exp.responsibilities"></curriculum-vitae-titled-list>

@@ -1,5 +1,7 @@
+<div class="alert alert-secondary printable" role="alert">
+  Online version at <a href="https://romko775.github.io/curriculum-vitae/">https://romko775.github.io/curriculum-vitae/</a>
+</div>
 <main class="container">
-
   <hr>
   <div class="row">
     <div class="col-12 text-center">
@@ -14,7 +16,7 @@
       <curriculum-vitae-content-block title="Contacts">
         <ng-container *ngFor="let contact of cv.contacts">
           <div>
-            <a class="link-dark" [href]="contact.url">
+            <a class="link-dark" [href]="contact.url" target="_blank">
               <i *ngIf="contact.icon" class="{{ contact.icon }} me-2"></i>
               <span class="text-break">{{ contact.title }}</span>
             </a>
@@ -33,6 +35,7 @@
     <div class="col-sm-12 col-md-8">
 
 
+      <hr class="printable">
       <curriculum-vitae-content-block title="About me">
         <p class="">{{ cv.aboutMe }}</p>
       </curriculum-vitae-content-block>
@@ -57,13 +60,25 @@
       </curriculum-vitae-content-block>
       <hr>
       <curriculum-vitae-content-block title="Languages">
-        <div class="row">
-          <div class="col">English - B1</div>
-          <div class="col">Ukrainian - Native</div>
-        </div>
+        <p>English - B1</p>
+        <p>Ukrainian - Native</p>
       </curriculum-vitae-content-block>
       <hr>
-      <curriculum-vitae-content-block title="Achievements"></curriculum-vitae-content-block>
+      <curriculum-vitae-content-block title="Certifications">
+        <ng-container *ngFor="let certification of cv.certifications">
+          <div class="row mb-3">
+            <div class="col-sm-12 col-md-4">
+              <span class="d-block mb-2">{{ certification.issueDate | date: midDateFormat }}</span>
+            </div>
+            <div class="col-sm-12 col-md-8">
+              <a class="text-decoration-none text-body" [href]="certification.validationUrl" target="_blank">
+                <p class="m-0 fw-bold">{{ certification.title }}</p>
+                <small>{{ certification.issuer }} - {{ certification.id }}</small>
+              </a>
+            </div>
+          </div>
+        </ng-container>
+      </curriculum-vitae-content-block>
       <hr>
     </div>
   </div>

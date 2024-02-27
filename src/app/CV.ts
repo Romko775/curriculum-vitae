@@ -1,4 +1,11 @@
-import { ICompany, IContact, IEducationItem, ITechSkill, IWorkExperience } from '@curriculum-vitae/core';
+import {
+  ICertificationItem,
+  ICompany,
+  IContact,
+  IEducationItem,
+  ITechSkill,
+  IWorkExperience
+} from '@curriculum-vitae/core';
 
 
 const KnC: ICompany = {
@@ -22,6 +29,7 @@ interface CVModel {
   workExperience: IWorkExperience[],
   technicalSkills: ITechSkill[],
   education: IEducationItem[];
+  certifications: ICertificationItem[];
 }
 
 /**
@@ -34,7 +42,9 @@ export const CV: CVModel = {
   aboutMe: 'Web Developer specializing in full stack development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including HTML5, JavaScript (TypeScript), CSS (SCSS, SASS, LESS), Python 3 (Django, DRF), OOP, SOLID and utils like JIRA, Confluence, Agile, Git. Strong background in project management and deployment, customer relations.',
   contacts: [
     { title: 'roman.yanush7@gmail.com', url: 'mailto:roman.yanush7@gmail.com', icon: 'bi bi-envelope-fill' },
-    { title: 'https://www.linkedin.com/in/roman-yanush', url: 'https://www.linkedin.com/in/roman-yanush', icon: 'bi bi-linkedin' }
+    { title: 'https://www.linkedin.com/in/roman-yanush', url: 'https://www.linkedin.com/in/roman-yanush', icon: 'bi bi-linkedin' },
+    { title: 'https://github.com/Romko775', url: 'https://github.com/Romko775', icon: 'bi bi-github' },
+    { title: 'https://www.npmjs.com/~paper_yoyo', url: 'https://www.npmjs.com/~paper_yoyo', icon: 'bi bi-share' }
   ],
   workExperience: [
     {
@@ -296,8 +306,9 @@ export const CV: CVModel = {
         'JavaScript, ECMAScript, TypeScript',
         'jQuery, ajax',
         'Npm, Package managing',
-        'Angular, React (small experience), Vue (small experience)',
-        'RxJS'
+        'Angular',
+        'RxJS, Nx',
+        'Ngrx, Ngxs'
       ]
     },
     {
@@ -326,7 +337,8 @@ export const CV: CVModel = {
       items: [
         'Electron.js, Cordova, Ionic',
         'Flutter, Dart',
-        'Next.js'
+        'Next.js',
+        'React, Vue'
       ]
     }
   ],
@@ -343,5 +355,35 @@ export const CV: CVModel = {
       start: 'Sep 2014',
       end: 'Jun 2020'
     }
+  ],
+  certifications: [
+    {
+      title: 'CYBER SECURITY BASICS',
+      id: '64be2c64a4c40',
+      issueDate: 'Jul 2023',
+      validationUrl: 'https://my-ua.robotdreams.cc/uk/certificate/64be2c64a4c40',
+      issuer: 'Robot_dreams'
+    },
+    {
+      title: 'Data analysis and statistical inference in the R language',
+      id: '106cdcfa71c24e42af98642c4e6ed449',
+      issueDate: 'May 2022',
+      issuer: 'Prometheus',
+      validationUrl: 'https://courses.prometheus.org.ua:18090/cert/106cdcfa71c24e42af98642c4e6ed449'
+    },
+    {
+      title: 'Programming for Everybody (Getting Started with Python)',
+      id: '78VJGS8HVCSY',
+      issueDate: 'Mar 2021',
+      validationUrl: 'https://www.coursera.org/account/accomplishments/certificate/78VJGS8HVCSY',
+      issuer: 'Coursera'
+    },
+    {
+      title: 'TypeScript: Object-Oriented Programming',
+      id: 'ASdW31bACkXY5i-ONu5xfIRveKro',
+      issueDate: 'Mar 2021',
+      validationUrl: 'https://www.linkedin.com/learning/certificates/104afc532c15a022e97e847f57dcdb8b0796c303570d45e62efe825010280e8f?trk=backfilled_certificate',
+      issuer: 'LinkedIn'
+    },
   ]
 };

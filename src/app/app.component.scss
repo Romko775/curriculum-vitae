@@ -1,0 +1,15 @@
+@media screen {
+  .printable {
+    display: none;
+  }
+}
+
+@media print {
+  .printable {
+    display: block;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+}

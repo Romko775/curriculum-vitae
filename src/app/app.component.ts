@@ -24,4 +24,8 @@ export class AppComponent {
 
   readonly cv = CV;
 
+  public openUrl(url: string): void {
+    window.open(url, '_blank');
+  }
+
 }
