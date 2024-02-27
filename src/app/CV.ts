@@ -1,4 +1,4 @@
-import { ICompany, IContact, IWorkExperience } from '@curriculum-vitae/core';
+import { ICompany, IContact, ITechSkill, IWorkExperience } from '@curriculum-vitae/core';
 
 
 const KnC: ICompany = {
@@ -19,7 +19,8 @@ interface CVModel {
   description: string;
   aboutMe: string;
   contacts: IContact[],
-  workExperience: IWorkExperience[]
+  workExperience: IWorkExperience[],
+  technicalSkills: ITechSkill[]
 }
 
 /**
@@ -279,6 +280,50 @@ export const CV: CVModel = {
         {type: 'django', name: 'Django 3'},
         {type: 'django', name: 'Django Rest Framework'},
         {type: 'django', name: 'Beautiful Soup'},
+      ]
+    }
+  ],
+  technicalSkills: [
+    {
+      type: 'Frontend',
+      items: [
+        'HTML, CSS, SCSS, SASS, LESS',
+        'Bootstrap, Angular Material',
+        'Grid, Flexbox',
+        'JavaScript, ECMAScript, TypeScript',
+        'jQuery, ajax',
+        'Npm, Package managing',
+        'Angular, React (small experience), Vue (small experience)',
+        'RxJS',
+      ]
+    },
+    {
+      type: 'Backend',
+      items: [
+        'Python, Django 3, DRF',
+        'Node.js, NestJS, Express',
+        'SQL, MySQL, MongoDB (small experience), PostgreSQL',
+        'Amazon S3',
+        'HTTP, REST, GraphQL'
+      ]
+    },
+    {
+      type: 'Utils',
+      items: [
+        'Docker, Nginx',
+        'Bash, Shell, PowerShell, SSH',
+        'git, GitHub, Gitlab, bitbucket',
+        'JIRA, Confluence',
+        'Google Analytics',
+        'Microsoft Windows, Linux, MacOS'
+      ]
+    },
+    {
+      type: 'Some experience in',
+      items: [
+        'Electron.js, Cordova, Ionic',
+        'Flutter, Dart',
+        'Next.js'
       ]
     }
   ]
