@@ -1,3 +1,1 @@
-export interface IStackItem {
-  displayName: string;
-}
+export interface IStackItem { type: string, name: string }
