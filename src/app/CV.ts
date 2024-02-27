@@ -238,7 +238,7 @@ export const CV: CVModel = {
     },
     {
       company: 'Freelance Web Developer',
-      dates: ['Jan 2018', 'Present'],
+      dates: ['Jan 2018', null],
       project: {
         name: 'Freelance',
         url: ''

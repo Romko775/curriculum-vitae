@@ -2,21 +2,30 @@
 <!--&lt;!&ndash;<router-outlet></router-outlet>&ndash;&gt;-->
 
 <main class="container">
+  <hr>
   <div class="row">
-    <div class="col-12">
-      <h1>Roman Yanush</h1>
+    <div class="col-6">
+      <h1 class="text-center">Roman Yanush</h1>
+    </div>
+    <div class="col-6">
+      <ng-container *ngFor="let contact of cv.contacts">
+        <div><a [href]="contact.url">{{ contact.title }}</a></div>
+      </ng-container>
     </div>
   </div>
-  <curriculum-vitae-content-block title="Contacts"></curriculum-vitae-content-block>
+  <hr>
+
   <curriculum-vitae-content-block title="About me">
-    <p class="text-justify">
+    <p>
       Web Developer specializing in full stack development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including HTML5, JavaScript (TypeScript), CSS (SCSS, SASS, LESS), Python 3 (Django, DRF), OOP, SOLID and utils like JIRA, Confluence, Agile, Git. Strong background in project management and deployment, customer relations.
     </p>
   </curriculum-vitae-content-block>
+  <hr>
 
   <curriculum-vitae-content-block title="Work experience">
     <curriculum-vitae-work-experience [workExperience]="cv.workExperience"></curriculum-vitae-work-experience>
   </curriculum-vitae-content-block>
+  <hr>
 
   <curriculum-vitae-content-block title="Technical skills">
 <!--    <ng-container *ngFor="let techSkill of technicalSkills">-->
@@ -26,8 +35,11 @@
 <!--      </ul>-->
 <!--    </ng-container>-->
   </curriculum-vitae-content-block>
+  <hr>
   <curriculum-vitae-content-block title="Education"></curriculum-vitae-content-block>
+  <hr>
   <curriculum-vitae-content-block title="Achievements"></curriculum-vitae-content-block>
+  <hr>
 </main>
 
 <!--<button (click)="downloadPdf()">Download</button>-->

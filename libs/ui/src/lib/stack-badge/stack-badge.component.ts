@@ -11,5 +11,5 @@ import { IStackItem } from '@curriculum-vitae/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class StackBadgeComponent {
-  @Input({ required: true }) stack?: IStackItem;
+  @Input({ required: true }) stackItem?: IStackItem;
 }
