@@ -32,8 +32,8 @@ export const CV: CVModel = {
   description: 'Angular Developer, Full stack developer',
   aboutMe: 'Web Developer specializing in full stack development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including HTML5, JavaScript (TypeScript), CSS (SCSS, SASS, LESS), Python 3 (Django, DRF), OOP, SOLID and utils like JIRA, Confluence, Agile, Git. Strong background in project management and deployment, customer relations.',
   contacts: [
-    { title: 'roman.yanush7@gmail.com', url: 'mailto:roman.yanush7@gmail.com' },
-    { title: 'https://www.linkedin.com/in/roman-yanush', url: 'https://www.linkedin.com/in/roman-yanush' }
+    { title: 'roman.yanush7@gmail.com', url: 'mailto:roman.yanush7@gmail.com', icon: 'bi bi-envelope-fill' },
+    { title: 'https://www.linkedin.com/in/roman-yanush', url: 'https://www.linkedin.com/in/roman-yanush', icon: 'bi bi-linkedin' }
   ],
   workExperience: [
     {
@@ -53,14 +53,14 @@ export const CV: CVModel = {
         'Unit test development and management.',
         'Conducted code reviews to ensure adherence to coding standards and improve overall code quality.',
         'Mentored junior developers on best practices for Angular development, fostering a supportive team environment.',
-        'Developed reusable UI components using Angular libraries, promoting code consistency across projects while reducing development time significantly.',
+        'Developed reusable UI components using Angular libraries, promoting code consistency across projects while reducing development time significantly.'
       ],
       stack: [
-        {type: 'script', name: 'Typescript'},
-        {type: 'angular', name: 'Angular (v14)'},
-        {type: 'script', name: 'Nx'},
-        {type: 'script', name: 'Jest'},
-      ],
+        { type: 'script', name: 'Typescript' },
+        { type: 'angular', name: 'Angular (v14)' },
+        { type: 'script', name: 'Nx' },
+        { type: 'script', name: 'Jest' }
+      ]
     },
     {
       company: 'Krusche & Company',
@@ -79,15 +79,15 @@ export const CV: CVModel = {
         'Implemented unit testing and end-to-end testing for Angular applications, ensuring software reliability and stability.',
         'Developed user-friendly interfaces for web applications, resulting in increased user satisfaction and engagement.',
         'Participated in demo reviews and communicated with the stakeholders',
-        'Collected, defined and translated user requirements into project designs and implementation plans.',
+        'Collected, defined and translated user requirements into project designs and implementation plans.'
       ],
       stack: [
-        {type: 'script', name: 'Typescript'},
-        {type: 'angular', name: 'Angular (v12-14)'},
-        {type: 'util', name: 'AWS (Cognito user pools, AWS Amplify, SES, etc.)'},
-        {type: 'util', name: 'GraphQL'},
-        {type: 'util', name: 'Strapi'},
-      ],
+        { type: 'script', name: 'Typescript' },
+        { type: 'angular', name: 'Angular (v12-14)' },
+        { type: 'util', name: 'AWS (Cognito user pools, AWS Amplify, SES, etc.)' },
+        { type: 'util', name: 'GraphQL' },
+        { type: 'util', name: 'Strapi' }
+      ]
     },
     {
       company: 'Krusche & Company',
@@ -104,13 +104,13 @@ export const CV: CVModel = {
         'Implemented unit testing and end-to-end testing for Angular applications, ensuring software reliability and stability.',
         'Developed user-friendly interfaces for web applications, resulting in increased user satisfaction and engagement.',
         'Participated in demo reviews and communicated with the stakeholders',
-        'Collected, defined and translated user requirements into project designs and implementation plans.',
+        'Collected, defined and translated user requirements into project designs and implementation plans.'
       ],
       stack: [
-        {type: 'script', name: 'Typescript'},
-        {type: 'angular', name: 'Angular (v12)'},
-        {type: 'util', name: 'AWS (Cognito user pools, etc)'},
-      ],
+        { type: 'script', name: 'Typescript' },
+        { type: 'angular', name: 'Angular (v12)' },
+        { type: 'util', name: 'AWS (Cognito user pools, etc)' }
+      ]
     },
     {
       company: 'Krusche & Company',
@@ -125,22 +125,22 @@ export const CV: CVModel = {
         'Designed intuitive graphical user interfaces to improve user experience.',
         'Conducted unit testing to deliver optimal browser functionality.',
         'Crafted SEO strategy and intuitive interface for site to achieve prominent rankings across top browser platforms.',
-        'Performed unit testing of web applications and troubleshot issues.',
+        'Performed unit testing of web applications and troubleshot issues.'
       ],
       stack: [
-        {type: 'script', name: 'Typescript'},
-        {type: 'angular', name: 'Angular (v11)'},
-        {type: 'angular', name: 'Angular Universal'},
-        {type: 'util', name: 'Webpack'},
-        {type: 'style', name: 'SCSS'},
-      ],
+        { type: 'script', name: 'Typescript' },
+        { type: 'angular', name: 'Angular (v11)' },
+        { type: 'angular', name: 'Angular Universal' },
+        { type: 'util', name: 'Webpack' },
+        { type: 'style', name: 'SCSS' }
+      ]
     },
     {
       company: 'Sciforce',
       dates: ['May 2018', 'May 2021'],
       project: {
         name: 'Transparent Language, Inc.',
-        url: 'https://www.transparent.com/',
+        url: 'https://www.transparent.com/'
       },
       position: 'Angular developer',
       description: 'Worked as an outstaff developer in a customer’s team on an enterprise education system for language courses and managing interactive learning that is used in schools, libraries, military centers and as a free to-use service.',
@@ -150,22 +150,22 @@ export const CV: CVModel = {
         'Reduced code complexity and improved maintainability by refactoring legacy Angular codebases.',
         'Developed software for desktop and mobile operating systems.',
         'Requirements clarification and communication with the stakeholders',
-        'Collaborated with cross-functional teams to deliver high-quality software within tight deadlines.',
+        'Collaborated with cross-functional teams to deliver high-quality software within tight deadlines.'
       ],
       stack: [
-        {type: 'script', name: 'Typescript'},
-        {type: 'angular', name: 'Angular (v4-11)'},
-        {type: 'util', name: 'Webpack'},
-        {type: 'style', name: 'SCSS'},
-        {type: 'script', name: 'Node.js'},
-      ],
+        { type: 'script', name: 'Typescript' },
+        { type: 'angular', name: 'Angular (v4-11)' },
+        { type: 'util', name: 'Webpack' },
+        { type: 'style', name: 'SCSS' },
+        { type: 'script', name: 'Node.js' }
+      ]
     },
     {
       company: 'GoITeens',
       dates: ['May 2021', 'Jul 2021'],
       project: {
         name: 'GoITeens',
-        url: '#',
+        url: '#'
       },
       position: 'Frontend teacher',
       description: 'Worked as a teacher for kids.',
@@ -178,20 +178,20 @@ export const CV: CVModel = {
         `Kept students on-task with proactive behavior modification and positive reinforcement strategies.`,
         `Prepared quizzes, tests and examinations to gauge how well students were learning.`,
         `Scheduled conferences with parents to discuss students' progress and classroom behavior.`,
-        `Completed student progress reports mid-term to notify students and parents of strengths and areas of improvement.`,
+        `Completed student progress reports mid-term to notify students and parents of strengths and areas of improvement.`
       ],
       stack: [
-        {type: 'html', name: 'HTML 5'},
-        {type: 'style', name: 'CSS'},
-        {type: 'style', name: 'SCSS'},
-      ],
+        { type: 'html', name: 'HTML 5' },
+        { type: 'style', name: 'CSS' },
+        { type: 'style', name: 'SCSS' }
+      ]
     },
     {
       company: 'Nextgen',
       dates: ['Dec 2019', 'Jun 2021'],
       project: {
         name: 'Nextgen',
-        url: 'https://nextgen.us.org/',
+        url: 'https://nextgen.us.org/'
       },
       position: 'Key Full Stack Developer, TechLead',
       description: 'A US startup for an egg cell donation and surrogacy.',
@@ -201,23 +201,23 @@ export const CV: CVModel = {
         'Collaborated with fellow engineers to evaluate software and hardware interfaces.',
         'Analyzed existing software implementations to identify areas requiring improvement.',
         'Managed development milestones from initial steps through final delivery.',
-        'Optimized web applications for speed, scalability and security.',
+        'Optimized web applications for speed, scalability and security.'
       ],
       stack: [
-        {type: 'script', name: 'Typescript'},
-        {type: 'angular', name: 'Angular (v9-11)'},
-        {type: 'python', name: 'Python 3'},
-        {type: 'django', name: 'Django 3'},
-        {type: 'django', name: 'Django Rest Framework'},
-        {type: 'util', name: 'JWT'},
-      ],
+        { type: 'script', name: 'Typescript' },
+        { type: 'angular', name: 'Angular (v9-11)' },
+        { type: 'python', name: 'Python 3' },
+        { type: 'django', name: 'Django 3' },
+        { type: 'django', name: 'Django Rest Framework' },
+        { type: 'util', name: 'JWT' }
+      ]
     },
     {
       company: 'Sciforce',
       dates: ['Feb 2021', 'May 2021'],
       project: {
         name: 'ACCA Publishing House',
-        url: 'https://www.acca.ua/',
+        url: 'https://www.acca.ua/'
       },
       position: 'Web developer',
       description: 'Redesigned ukrainian books E-store.',
@@ -227,15 +227,15 @@ export const CV: CVModel = {
         'Ensured cross-browser compatibility by utilizing progressive enhancement techniques that allowed for optimal display on a wide range of devices.',
         'Integrated third-party APIs to enhance website functionality and provide additional services to users.',
         'Implemented accessibility features to ensure compliance with ADA guidelines and improve user experience for all visitors.',
-        'Enhanced user experience by implementing responsive web design and optimizing website performance.',
+        'Enhanced user experience by implementing responsive web design and optimizing website performance.'
       ],
       stack: [
-        {type: 'django', name: 'Django 1.1'},
-        {type: 'script', name: 'jQuery'},
-        {type: 'script', name: 'Ajax'},
-        {type: 'style', name: 'SCSS'},
-        {type: 'util', name: 'Gulp'},
-      ],
+        { type: 'django', name: 'Django 1.1' },
+        { type: 'script', name: 'jQuery' },
+        { type: 'script', name: 'Ajax' },
+        { type: 'style', name: 'SCSS' },
+        { type: 'util', name: 'Gulp' }
+      ]
     },
     {
       company: 'Freelance Web Developer',
@@ -248,19 +248,19 @@ export const CV: CVModel = {
       description: '',
       responsibilities: [],
       stack: [
-        {type: 'html', name: 'HTML'},
-        {type: 'style', name: 'CSS'},
-        {type: 'style', name: 'SCSS'},
-        {type: 'script', name: 'Javascript'},
-        {type: 'script', name: 'Typescript'},
-        {type: 'script', name: 'Node.js'},
-        {type: 'angular', name: 'Angular'},
-        {type: 'python', name: 'Python 3'},
-        {type: 'django', name: 'Django 3'},
-        {type: 'util', name: 'CI/CD'},
-        {type: 'util', name: 'Nginx'},
-        {type: 'util', name: 'Gulp'},
-        {type: 'util', name: 'Webpack'},
+        { type: 'html', name: 'HTML' },
+        { type: 'style', name: 'CSS' },
+        { type: 'style', name: 'SCSS' },
+        { type: 'script', name: 'Javascript' },
+        { type: 'script', name: 'Typescript' },
+        { type: 'script', name: 'Node.js' },
+        { type: 'angular', name: 'Angular' },
+        { type: 'python', name: 'Python 3' },
+        { type: 'django', name: 'Django 3' },
+        { type: 'util', name: 'CI/CD' },
+        { type: 'util', name: 'Nginx' },
+        { type: 'util', name: 'Gulp' },
+        { type: 'util', name: 'Webpack' }
       ]
     },
     {
@@ -274,12 +274,12 @@ export const CV: CVModel = {
       description: 'Free Ukraine popular banks currency tracking tool.',
       responsibilities: [],
       stack: [
-        {type: 'script', name: 'Typescript'},
-        {type: 'angular', name: 'Angular (v11-12)'},
-        {type: 'python', name: 'Python 3'},
-        {type: 'django', name: 'Django 3'},
-        {type: 'django', name: 'Django Rest Framework'},
-        {type: 'django', name: 'Beautiful Soup'},
+        { type: 'script', name: 'Typescript' },
+        { type: 'angular', name: 'Angular (v11-12)' },
+        { type: 'python', name: 'Python 3' },
+        { type: 'django', name: 'Django 3' },
+        { type: 'django', name: 'Django Rest Framework' },
+        { type: 'django', name: 'Beautiful Soup' }
       ]
     }
   ],
@@ -294,7 +294,7 @@ export const CV: CVModel = {
         'jQuery, ajax',
         'Npm, Package managing',
         'Angular, React (small experience), Vue (small experience)',
-        'RxJS',
+        'RxJS'
       ]
     },
     {

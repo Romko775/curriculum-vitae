@@ -9,10 +9,15 @@
   <hr>
 
   <div class="row">
-    <div class="col-4">
+    <div class="col-sm-12 col-md-4">
       <curriculum-vitae-content-block title="Contacts">
         <ng-container *ngFor="let contact of cv.contacts">
-          <div><a class="link-dark" [href]="contact.url">{{ contact.title }}</a></div>
+          <div>
+            <a class="link-dark" [href]="contact.url">
+              <i *ngIf="contact.icon" class="{{ contact.icon }} me-2"></i>
+              <span class="text-break">{{ contact.title }}</span>
+            </a>
+          </div>
         </ng-container>
       </curriculum-vitae-content-block>
       <hr>
@@ -24,7 +29,7 @@
       </curriculum-vitae-content-block>
       <!--      <hr>-->
     </div>
-    <div class="col-8">
+    <div class="col-sm-12 col-md-8">
 
 
       <curriculum-vitae-content-block title="About me">

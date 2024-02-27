@@ -6,13 +6,13 @@ import {
   TitledListComponent,
   WorkExperienceComponent
 } from '@curriculum-vitae/ui';
-import { DatePipe, KeyValuePipe, NgForOf } from '@angular/common';
+import { DatePipe, KeyValuePipe, NgForOf, NgIf } from '@angular/common';
 import { CV } from './CV';
 
 
 @Component({
   standalone: true,
-  imports: [RouterModule, ContentBlockComponent, NgForOf, KeyValuePipe, DatePipe, WorkExperienceComponent, StackBlockComponent, TitledListComponent],
+  imports: [RouterModule, ContentBlockComponent, NgForOf, KeyValuePipe, DatePipe, WorkExperienceComponent, StackBlockComponent, TitledListComponent, NgIf],
   selector: 'curriculum-vitae-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
