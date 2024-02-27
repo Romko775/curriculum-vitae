@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import {
-  ContentBlockComponent,
+  ContentBlockComponent, DatesBlockComponent,
   StackBlockComponent,
   TitledListComponent,
   WorkExperienceComponent
@@ -12,7 +12,7 @@ import { CV } from './CV';
 
 @Component({
   standalone: true,
-  imports: [RouterModule, ContentBlockComponent, NgForOf, KeyValuePipe, DatePipe, WorkExperienceComponent, StackBlockComponent, TitledListComponent, NgIf],
+  imports: [RouterModule, ContentBlockComponent, NgForOf, KeyValuePipe, DatePipe, WorkExperienceComponent, StackBlockComponent, TitledListComponent, NgIf, DatesBlockComponent],
   selector: 'curriculum-vitae-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

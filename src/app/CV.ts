@@ -1,4 +1,4 @@
-import { ICompany, IContact, ITechSkill, IWorkExperience } from '@curriculum-vitae/core';
+import { ICompany, IContact, IEducationItem, ITechSkill, IWorkExperience } from '@curriculum-vitae/core';
 
 
 const KnC: ICompany = {
@@ -20,7 +20,8 @@ interface CVModel {
   aboutMe: string;
   contacts: IContact[],
   workExperience: IWorkExperience[],
-  technicalSkills: ITechSkill[]
+  technicalSkills: ITechSkill[],
+  education: IEducationItem[];
 }
 
 /**
@@ -327,6 +328,20 @@ export const CV: CVModel = {
         'Flutter, Dart',
         'Next.js'
       ]
+    }
+  ],
+  education: [
+    {
+      establishment: 'Lesya Ukrainka Volyn National University - Lutsk, Ukraine',
+      specialty: 'Master of Science: Computer Science And Programming',
+      start: 'Sep 2021',
+      end: 'Dec 2022'
+    },
+    {
+      establishment: 'Danylo Halycky Lviv National Medical University - Lviv, Ukraine',
+      specialty: 'Master of Science: Pharmacy',
+      start: 'Sep 2014',
+      end: 'Jun 2020'
     }
   ]
 };

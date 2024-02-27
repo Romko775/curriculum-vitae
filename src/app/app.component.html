@@ -2,8 +2,9 @@
 
   <hr>
   <div class="row">
-    <div class="col-12">
-      <h1 class="text-center">Roman Yanush</h1>
+    <div class="col-12 text-center">
+      <h1 class="display-1">Roman Yanush</h1>
+      <p class="fs-4 text-body-secondary">Angular Developer, Full stack developer</p>
     </div>
   </div>
   <hr>
@@ -33,12 +34,7 @@
 
 
       <curriculum-vitae-content-block title="About me">
-        <p>
-          Web Developer specializing in full stack development. Experienced with all stages of the development cycle for
-          dynamic web projects. Well-versed in numerous programming languages including HTML5, JavaScript (TypeScript),
-          CSS (SCSS, SASS, LESS), Python 3 (Django, DRF), OOP, SOLID and utils like JIRA, Confluence, Agile, Git. Strong
-          background in project management and deployment, customer relations.
-        </p>
+        <p class="">{{ cv.aboutMe }}</p>
       </curriculum-vitae-content-block>
       <hr>
 
@@ -46,7 +42,26 @@
         <curriculum-vitae-work-experience [workExperience]="cv.workExperience"></curriculum-vitae-work-experience>
       </curriculum-vitae-content-block>
       <hr>
-      <curriculum-vitae-content-block title="Education"></curriculum-vitae-content-block>
+      <curriculum-vitae-content-block title="Education">
+        <ng-container *ngFor="let item of cv.education">
+          <div class="row mb-3">
+            <div class="col-sm-12 col-md-4">
+              <curriculum-vitae-dates-block [dates]="[item.start, item.end]"></curriculum-vitae-dates-block>
+            </div>
+            <div class="col-sm-12 col-md-8">
+              <p class="m-0 fw-bold">{{ item.specialty }}</p>
+              <small>{{ item.establishment }}</small>
+            </div>
+          </div>
+        </ng-container>
+      </curriculum-vitae-content-block>
+      <hr>
+      <curriculum-vitae-content-block title="Languages">
+        <div class="row">
+          <div class="col">English - B1</div>
+          <div class="col">Ukrainian - Native</div>
+        </div>
+      </curriculum-vitae-content-block>
       <hr>
       <curriculum-vitae-content-block title="Achievements"></curriculum-vitae-content-block>
       <hr>
