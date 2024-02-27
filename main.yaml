@@ -1,15 +1,21 @@
 name: Build and Deploy App
 
+#on:
+#  pull_request:
+#    branches:
+#      - main
+#    types:
+#      - closed
 on:
-  pull_request:
+  push:
     branches:
-      - main
-    types:
-      - closed
+      - develop
 
+#jobs:
+#  if_merged:
+#    if: github.event.pull_request.merged == true
 jobs:
-  if_merged:
-    if: github.event.pull_request.merged == true
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -17,7 +23,7 @@ jobs:
       - name: Adding Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 16
+          node-version: 18
       - name: Install Dependencies
         run: npm install
       - name: Build App
