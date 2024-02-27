@@ -84,7 +84,9 @@ export const CV: CVModel = {
       stack: [
         { type: 'script', name: 'Typescript' },
         { type: 'angular', name: 'Angular (v12-14)' },
-        { type: 'util', name: 'AWS (Cognito user pools, AWS Amplify, SES, etc.)' },
+        { type: 'util', name: 'AWS Amplify' },
+        { type: 'util', name: 'AWS SES' },
+        { type: 'util', name: 'AWS Cognito' },
         { type: 'util', name: 'GraphQL' },
         { type: 'util', name: 'Strapi' }
       ]
