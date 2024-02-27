@@ -1,23 +1,8 @@
 name: Build and Deploy App
 
-#on:
-#  pull_request:
-#    branches:
-#      - main
-#    types:
-#      - closed
-#on:
-#  push:
-#    branches:
-#      - develop
-
 on:
-  push:
-    branches:
-      - main
   pull_request:
-    branches:
-      - main
+    branches: [main]
     types: [closed]
 
 jobs:
