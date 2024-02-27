@@ -1,0 +1,9 @@
+<ng-container *ngFor="let exp of workExperience">
+  <h3>{{ exp.company }}</h3>
+  <h4><a [href]="exp.project.url">{{ exp.project.name }}</a> - {{ exp.position }}</h4>
+  <p>{{ exp.description }}</p>
+  <h5>Responsibilities:</h5>
+  <ul>
+    <li *ngFor="let responsibility of exp.responsibilities">{{ responsibility }}</li>
+  </ul>
+</ng-container>

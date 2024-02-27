@@ -15,15 +15,7 @@
   </curriculum-vitae-content-block>
 
   <curriculum-vitae-content-block title="Work experience">
-    <ng-container *ngFor="let exp of cv.workExperience">
-      <h3>{{ exp.company }}</h3>
-      <h4><a [href]="exp.project.url">{{ exp.project.name }}</a> - {{ exp.position }}</h4>
-      <p>{{ exp.description }}</p>
-      <p>Responsibilities</p>
-      <ul>
-        <li *ngFor="let responsibility of exp.responsibilities">{{ responsibility }}</li>
-      </ul>
-    </ng-container>
+    <curriculum-vitae-work-experience [workExperience]="cv.workExperience"></curriculum-vitae-work-experience>
   </curriculum-vitae-content-block>
 
   <curriculum-vitae-content-block title="Technical skills">
