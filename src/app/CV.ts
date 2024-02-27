@@ -111,7 +111,7 @@ export const CV: CVModel = {
       stack: [
         { type: 'script', name: 'Typescript' },
         { type: 'angular', name: 'Angular (v12)' },
-        { type: 'util', name: 'AWS (Cognito user pools, etc)' }
+        { type: 'util', name: 'AWS Cognito' },
       ]
     },
     {
