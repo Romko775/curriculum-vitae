@@ -1,4 +1,6 @@
-<span class="font-weight-bold">Stack: </span>
-<ng-container *ngFor="let stackItem of stackItems">
-  <curriculum-vitae-stack-badge [stackItem]="stackItem"></curriculum-vitae-stack-badge>
-</ng-container>
+@if (stackItems.length) {
+  <span class="font-weight-bold">Stack: </span>
+  @for (stackItem of stackItems; track stackItem.name) {
+    <curriculum-vitae-stack-badge [stackItem]="stackItem"></curriculum-vitae-stack-badge>
+  }
+}

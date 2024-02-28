@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { CommonModule, DatePipe } from '@angular/common';
-import { DateAlike, IWorkExperience } from '@curriculum-vitae/core';
+import { CommonModule } from '@angular/common';
+import { IWorkExperience } from '@curriculum-vitae/core';
 import { StackBlockComponent } from '../stack-block/stack-block.component';
 import { TitledListComponent } from '../titled-list/titled-list.component';
 import { DatesBlockComponent } from '../dates-block/dates-block.component';

@@ -1,6 +1,10 @@
-<ng-container *ngIf="items.length">
-  <p class="h6">{{ title }}</p>
+<p class="h6">{{ title }}</p>
+@if (items.length) {
   <ul>
-    <li *ngFor="let item of items">{{ item }}</li>
+    @for (item of items; track item) {
+      <li>{{ item }}</li>
+    }
   </ul>
-</ng-container>
+} @else {
+   <p>No content</p>
+}
