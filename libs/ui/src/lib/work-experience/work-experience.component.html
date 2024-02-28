@@ -1,4 +1,4 @@
-<ng-container *ngFor="let exp of workExperience">
+@for (exp of workExperience; track exp.dates) {
   <div class="mb-4 work-experience-block">
     <div class="row d-flex align-center">
       <div class="col-sm-6 col-md-8"><h3 class="fs-4" style="color: #8A0000">{{ exp.company }}</h3></div>
@@ -16,4 +16,4 @@
       <curriculum-vitae-stack-block [stackItems]="exp.stack"></curriculum-vitae-stack-block>
     </div>
   </div>
-</ng-container>
+}

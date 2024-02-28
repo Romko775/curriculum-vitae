@@ -1,5 +1,6 @@
 <div class="alert alert-secondary printable" role="alert">
-  Online version at <a href="https://romko775.github.io/curriculum-vitae/">https://romko775.github.io/curriculum-vitae/</a>
+  Online version at <a
+  href="https://romko775.github.io/curriculum-vitae/">https://romko775.github.io/curriculum-vitae/</a>
 </div>
 <main class="container">
   <hr>
@@ -14,21 +15,21 @@
   <div class="row">
     <div class="col-sm-12 col-md-4">
       <curriculum-vitae-content-block title="Contacts">
-        <ng-container *ngFor="let contact of cv.contacts">
+        @for (contact of cv.contacts; track contact.title) {
           <div>
             <a class="link-dark" [href]="contact.url" target="_blank">
               <i *ngIf="contact.icon" class="{{ contact.icon }} me-2"></i>
               <span class="text-break">{{ contact.title }}</span>
             </a>
           </div>
-        </ng-container>
+        }
       </curriculum-vitae-content-block>
       <hr>
       <curriculum-vitae-content-block title="Technical skills">
-        <ng-container *ngFor="let techSkill of cv.technicalSkills">
+        @for (techSkill of cv.technicalSkills; track techSkill.items) {
           <curriculum-vitae-titled-list [title]="techSkill.type"
                                         [items]="techSkill.items"></curriculum-vitae-titled-list>
-        </ng-container>
+        }
       </curriculum-vitae-content-block>
       <!--      <hr>-->
     </div>
@@ -46,7 +47,7 @@
       </curriculum-vitae-content-block>
       <hr>
       <curriculum-vitae-content-block title="Education">
-        <ng-container *ngFor="let item of cv.education">
+        @for (item of cv.education; track item.specialty) {
           <div class="row mb-3">
             <div class="col-sm-12 col-md-4">
               <curriculum-vitae-dates-block [dates]="[item.start, item.end]"></curriculum-vitae-dates-block>
@@ -56,7 +57,7 @@
               <small>{{ item.establishment }}</small>
             </div>
           </div>
-        </ng-container>
+        }
       </curriculum-vitae-content-block>
       <hr>
       <curriculum-vitae-content-block title="Languages">
@@ -65,7 +66,7 @@
       </curriculum-vitae-content-block>
       <hr>
       <curriculum-vitae-content-block title="Certifications">
-        <ng-container *ngFor="let certification of cv.certifications">
+        @for (certification of cv.certifications; track certification.id) {
           <div class="row mb-3">
             <div class="col-sm-12 col-md-4">
               <span class="d-block mb-2">{{ certification.issueDate | date: midDateFormat }}</span>
@@ -77,11 +78,9 @@
               </a>
             </div>
           </div>
-        </ng-container>
+        }
       </curriculum-vitae-content-block>
       <hr>
     </div>
   </div>
 </main>
-
-<!--<button (click)="downloadPdf()">Download</button>-->
