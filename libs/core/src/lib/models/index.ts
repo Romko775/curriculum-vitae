@@ -3,6 +3,7 @@ export * from './_company.model';
 export * from './_contact.model';
 export * from './_date-alike.model';
 export * from './_education.model';
+export * from './_page-metadata.model';
 export * from './_project.model';
 export * from './_stack-item.model';
 export * from './_tech-skill.model';
