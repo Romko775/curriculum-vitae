@@ -49,7 +49,7 @@ export const CV: CVModel = {
   workExperience: [
     {
       company: 'Krusche & Company',
-      dates: ['Jun 2023', 'Feb 2024'],
+      dates: ['01 Jun 2023', '01 Feb 2024'],
       project: {
         name: 'Shipsta',
         url: '#'
@@ -75,7 +75,7 @@ export const CV: CVModel = {
     },
     {
       company: 'Krusche & Company',
-      dates: ['Jan 2022', 'Jun 2023'],
+      dates: ['01 Jan 2022', '01 Jun 2023'],
       project: {
         name: 'Ibau',
         url: '#'
@@ -104,7 +104,7 @@ export const CV: CVModel = {
     },
     {
       company: 'Krusche & Company',
-      dates: ['Sep 2021', 'Dec 2021'],
+      dates: ['01 Sep 2021', '01 Dec 2021'],
       project: {
         name: 'Vidar',
         url: '#'
@@ -127,7 +127,7 @@ export const CV: CVModel = {
     },
     {
       company: 'Krusche & Company',
-      dates: ['May 2021', 'Sep 2021'],
+      dates: ['01 May 2021', '01 Sep 2021'],
       project: {
         name: 'Reverso',
         url: '#'
@@ -150,7 +150,7 @@ export const CV: CVModel = {
     },
     {
       company: 'Sciforce',
-      dates: ['May 2018', 'May 2021'],
+      dates: ['01 May 2018', '01 May 2021'],
       project: {
         name: 'Transparent Language, Inc.',
         url: 'https://www.transparent.com/'
@@ -175,7 +175,7 @@ export const CV: CVModel = {
     },
     {
       company: 'GoITeens',
-      dates: ['May 2021', 'Jul 2021'],
+      dates: ['01 May 2021', '01 Jul 2021'],
       project: {
         name: 'GoITeens',
         url: '#'
@@ -201,7 +201,7 @@ export const CV: CVModel = {
     },
     {
       company: 'Nextgen',
-      dates: ['Dec 2019', 'Jun 2021'],
+      dates: ['01 Dec 2019', '01 Jun 2021'],
       project: {
         name: 'Nextgen',
         url: 'https://nextgen.us.org/'
@@ -227,7 +227,7 @@ export const CV: CVModel = {
     },
     {
       company: 'Sciforce',
-      dates: ['Feb 2021', 'May 2021'],
+      dates: ['01 Feb 2021', '01 May 2021'],
       project: {
         name: 'ACCA Publishing House',
         url: 'https://www.acca.ua/'
@@ -252,7 +252,7 @@ export const CV: CVModel = {
     },
     {
       company: 'Freelance Web Developer',
-      dates: ['Jan 2018', null],
+      dates: ['01 Jan 2018', null],
       project: {
         name: 'Freelance',
         url: ''
@@ -346,42 +346,42 @@ export const CV: CVModel = {
     {
       establishment: 'Lesya Ukrainka Volyn National University - Lutsk, Ukraine',
       specialty: 'Master of Science: Computer Science And Programming',
-      start: 'Sep 2021',
-      end: 'Dec 2022'
+      start: '01 Sep 2021',
+      end: '31 Dec 2022'
     },
     {
       establishment: 'Danylo Halycky Lviv National Medical University - Lviv, Ukraine',
       specialty: 'Master of Science: Pharmacy',
-      start: 'Sep 2014',
-      end: 'Jun 2020'
+      start: '01 Sep 2014',
+      end: '01 Jun 2020'
     }
   ],
   certifications: [
     {
       title: 'CYBER SECURITY BASICS',
       id: '64be2c64a4c40',
-      issueDate: 'Jul 2023',
+      issueDate: '01 Jul 2023',
       validationUrl: 'https://my-ua.robotdreams.cc/uk/certificate/64be2c64a4c40',
       issuer: 'Robot_dreams'
     },
     {
       title: 'Data analysis and statistical inference in the R language',
       id: '106cdcfa71c24e42af98642c4e6ed449',
-      issueDate: 'May 2022',
+      issueDate: '01 May 2022',
       issuer: 'Prometheus',
       validationUrl: 'https://courses.prometheus.org.ua:18090/cert/106cdcfa71c24e42af98642c4e6ed449'
     },
     {
       title: 'Programming for Everybody (Getting Started with Python)',
       id: '78VJGS8HVCSY',
-      issueDate: 'Mar 2021',
+      issueDate: '01 Mar 2021',
       validationUrl: 'https://www.coursera.org/account/accomplishments/certificate/78VJGS8HVCSY',
       issuer: 'Coursera'
     },
     {
       title: 'TypeScript: Object-Oriented Programming',
       id: 'ASdW31bACkXY5i-ONu5xfIRveKro',
-      issueDate: 'Mar 2021',
+      issueDate: '01 Mar 2021',
       validationUrl: 'https://www.linkedin.com/learning/certificates/104afc532c15a022e97e847f57dcdb8b0796c303570d45e62efe825010280e8f?trk=backfilled_certificate',
       issuer: 'LinkedIn'
     },
