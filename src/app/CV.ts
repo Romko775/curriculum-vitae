@@ -48,6 +48,30 @@ export const CV: CVModel = {
   ],
   workExperience: [
     {
+      company: 'Repetry',
+      dates: ['01 Apr 2024', null],
+      project: {
+        name: 'Repetry',
+        url: '#'
+      },
+      position: 'Angular developer',
+      description: 'Working on an enterprise system for tutor and student management',
+      responsibilities: [
+        'New features designing and developing.',
+        'App optimization, bugfixing.',
+        'Participated in demo reviews and communicated with the stakeholders.',
+        'Unit test development and management.',
+        'Conducted code reviews to ensure adherence to coding standards and improve overall code quality.',
+        'Developed reusable UI components using Angular libraries, promoting code consistency across projects while reducing development time significantly.'
+      ],
+      stack: [
+        { type: 'script', name: 'Typescript' },
+        { type: 'angular', name: 'Angular (v17)' },
+        { type: 'style', name: 'Angular Material' },
+        { type: 'util', name: 'Ngrx' },
+      ]
+    },
+    {
       company: 'Krusche & Company',
       dates: ['01 Jun 2023', '01 Feb 2024'],
       project: {
