@@ -127,6 +127,28 @@ export const CV: CVModel = {
       ]
     },
     {
+      company: 'Sciforce',
+      dates: ['01 Oct 2021', '01 Oct 2022'],
+      project: {
+        name: 'Xflow',
+        url: '#'
+      },
+      position: 'React developer',
+      description: 'Worked on analytic system as part time developer ',
+      responsibilities: [
+        'Designed API endpoints and DB structure',
+        'Designed responsive web layouts using CSS frameworks, providing seamless user experience across devices.',
+        'Requirements clarification and communication with the stakeholders',
+        'Collaborated with cross-functional teams to deliver high-quality software within deadlines.'
+      ],
+      stack: [
+        { type: 'script', name: 'Typescript' },
+        { type: 'script', name: 'React' },
+        { type: 'script', name: 'Next.js' },
+        { type: 'util', name: 'Mongo DB' }
+      ]
+    },
+    {
       company: 'Krusche & Company',
       dates: ['01 Sep 2021', '01 Dec 2021'],
       project: {
