@@ -144,7 +144,7 @@ export const CV: CVModel = {
       stack: [
         { type: 'script', name: 'Typescript' },
         { type: 'script', name: 'React' },
-        { type: 'script', name: 'Next.js' },
+        { type: 'script', name: 'Nest.js' },
         { type: 'util', name: 'Mongo DB' }
       ]
     },
