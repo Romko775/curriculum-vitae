@@ -4,11 +4,12 @@ import { IWorkExperience } from '@curriculum-vitae/core';
 import { StackBlockComponent } from '../stack-block/stack-block.component';
 import { TitledListComponent } from '../titled-list/titled-list.component';
 import { DatesBlockComponent } from '../dates-block/dates-block.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'curriculum-vitae-work-experience',
   standalone: true,
-  imports: [CommonModule, StackBlockComponent, TitledListComponent, DatesBlockComponent],
+  imports: [CommonModule, StackBlockComponent, TitledListComponent, DatesBlockComponent, TranslateModule],
   templateUrl: './work-experience.component.html',
   styleUrl: './work-experience.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush

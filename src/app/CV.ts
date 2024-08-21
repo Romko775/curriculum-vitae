@@ -37,9 +37,9 @@ interface CVModel {
  */
 
 export const CV: CVModel = {
-  title: 'Roman Yanush',
+  title: 'ME.NAME',
   description: 'Angular Developer, Full stack developer',
-  aboutMe: 'Web Developer specializing in full stack development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including HTML5, JavaScript (TypeScript), CSS (SCSS, SASS, LESS), Python 3 (Django, DRF), OOP, SOLID and utils like JIRA, Confluence, Agile, Git. Strong background in project management and deployment, customer relations.',
+  aboutMe: 'ME.ABOUT_ME',
   contacts: [
     { title: 'roman.yanush7@gmail.com', url: 'mailto:roman.yanush7@gmail.com', icon: 'bi bi-envelope-fill' },
     { title: 'https://www.linkedin.com/in/roman-yanush', url: 'https://www.linkedin.com/in/roman-yanush', icon: 'bi bi-linkedin' },
@@ -113,7 +113,7 @@ export const CV: CVModel = {
         'Developed reusable UI components using Angular libraries, promoting code consistency across projects while reducing development time significantly.',
         'Implemented unit testing and end-to-end testing for Angular applications, ensuring software reliability and stability.',
         'Developed user-friendly interfaces for web applications, resulting in increased user satisfaction and engagement.',
-        'Participated in demo reviews and communicated with the stakeholders',
+        'Participated in demo reviews and communicated with the stakeholders.',
         'Collected, defined and translated user requirements into project designs and implementation plans.'
       ],
       stack: [
@@ -134,12 +134,12 @@ export const CV: CVModel = {
         url: '#'
       },
       position: 'React developer',
-      description: 'Worked on analytic system as part time developer ',
+      description: 'Worked on analytic system as part time developer',
       responsibilities: [
-        'Designed API endpoints and DB structure',
+        'Designed API endpoints and DB structure.',
         'Designed responsive web layouts using CSS frameworks, providing seamless user experience across devices.',
-        'Requirements clarification and communication with the stakeholders',
-        'Collaborated with cross-functional teams to deliver high-quality software within deadlines.'
+        'Requirements clarification and communication with the stakeholders.',
+        'Collaborated with cross-functional teams to deliver high-quality software within tight deadlines.'
       ],
       stack: [
         { type: 'script', name: 'Typescript' },
@@ -162,7 +162,7 @@ export const CV: CVModel = {
         'Developed reusable UI components using Angular libraries, promoting code consistency across projects while reducing development time significantly.',
         'Implemented unit testing and end-to-end testing for Angular applications, ensuring software reliability and stability.',
         'Developed user-friendly interfaces for web applications, resulting in increased user satisfaction and engagement.',
-        'Participated in demo reviews and communicated with the stakeholders',
+        'Participated in demo reviews and communicated with the stakeholders.',
         'Collected, defined and translated user requirements into project designs and implementation plans.'
       ],
       stack: [
@@ -208,7 +208,7 @@ export const CV: CVModel = {
         'Designed responsive web layouts using CSS frameworks, providing seamless user experience across devices.',
         'Reduced code complexity and improved maintainability by refactoring legacy Angular codebases.',
         'Developed software for desktop and mobile operating systems.',
-        'Requirements clarification and communication with the stakeholders',
+        'Requirements clarification and communication with the stakeholders.',
         'Collaborated with cross-functional teams to deliver high-quality software within tight deadlines.'
       ],
       stack: [
@@ -256,7 +256,7 @@ export const CV: CVModel = {
       description: 'A US startup for an egg cell donation and surrogacy.',
       responsibilities: [
         'Developed scalable applications using modern JavaScript frameworks, resulting in increased efficiency and maintainability.',
-        'Reviewed code, debugged problems, and corrected issues.',
+        'Conducted code reviews to ensure adherence to coding standards and improve overall code quality.',
         'Collaborated with fellow engineers to evaluate software and hardware interfaces.',
         'Analyzed existing software implementations to identify areas requiring improvement.',
         'Managed development milestones from initial steps through final delivery.',
@@ -279,7 +279,7 @@ export const CV: CVModel = {
         url: 'https://www.acca.ua/'
       },
       position: 'Web developer',
-      description: 'Redesigned ukrainian books E-store.',
+      description: 'Worked on redesign of ukrainian books E-store',
       responsibilities: [
         'Resolved technical issues promptly, ensuring minimal disruption to website performance and user satisfaction.',
         'Established version control processes to facilitate collaborative development efforts among team members.',
