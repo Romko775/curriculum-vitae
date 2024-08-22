@@ -1,5 +1,5 @@
 @if (stackItems.length) {
-  <span class="font-weight-bold">Stack: </span>
+  <span class="font-weight-bold">{{ 'COMMON.STACK' | translate }}: </span>
   @for (stackItem of stackItems; track stackItem.name) {
     <curriculum-vitae-stack-badge [stackItem]="stackItem"></curriculum-vitae-stack-badge>
   }

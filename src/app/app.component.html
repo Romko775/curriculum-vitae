@@ -2,32 +2,45 @@
   Online version at <a
   href="https://romko775.github.io/curriculum-vitae/">https://romko775.github.io/curriculum-vitae/</a>
 </div>
+<header class="container not-printable">
+  <button type="button" class="btn btn-outline-secondary print__btn" (click)="print()">
+    <i class="bi bi-printer"></i>
+    {{ 'COMMON.SAVE' | translate }}
+  </button>
+  <ng-select [formControl]="localeCtrl"
+             [items]="locales"
+             [clearable]="false"
+             [searchable]="false"
+             bindValue="id"
+             bindLabel="label"
+  ></ng-select>
+</header>
 <main class="container">
   <hr>
   <div class="row">
     <div class="col-12 text-center">
-      <h1 class="display-1">Roman Yanush</h1>
-      <p class="fs-4 text-body-secondary">Angular Developer, Full stack developer</p>
+      <h1 class="display-1">{{ cv.title | translate }}</h1>
+      <p class="fs-4 text-body-secondary">{{ cv.description }}</p>
     </div>
   </div>
   <hr>
 
   <div class="row">
     <div class="col-sm-12 col-md-4">
-      <curriculum-vitae-content-block title="Contacts">
+      <curriculum-vitae-content-block [title]="'COMMON.CONTACTS' | translate">
         @for (contact of cv.contacts; track contact.title) {
           <div>
             <a class="link-dark" [href]="contact.url" target="_blank">
               <i *ngIf="contact.icon" class="{{ contact.icon }} me-2"></i>
-              <span class="text-break">{{ contact.title }}</span>
+              <span class="text-break">{{ contact.title | translate }}</span>
             </a>
           </div>
         }
       </curriculum-vitae-content-block>
       <hr>
-      <curriculum-vitae-content-block title="Technical skills">
+      <curriculum-vitae-content-block [title]="'COMMON.TECHNICAL_SKILLS' | translate">
         @for (techSkill of cv.technicalSkills; track techSkill.items) {
-          <curriculum-vitae-titled-list [title]="techSkill.type"
+          <curriculum-vitae-titled-list [title]="techSkill.type | translate"
                                         [items]="techSkill.items"></curriculum-vitae-titled-list>
         }
       </curriculum-vitae-content-block>
@@ -37,39 +50,39 @@
 
 
       <hr class="printable">
-      <curriculum-vitae-content-block title="About me">
-        <p class="">{{ cv.aboutMe }}</p>
+      <curriculum-vitae-content-block [title]="'COMMON.ABOUT_ME' | translate">
+        <p class="">{{ cv.aboutMe | translate }}</p>
       </curriculum-vitae-content-block>
       <hr>
 
-      <curriculum-vitae-content-block title="Work experience">
+      <curriculum-vitae-content-block [title]="'COMMON.WORK_EXPERIENCE' | translate">
         <curriculum-vitae-work-experience [workExperience]="cv.workExperience"></curriculum-vitae-work-experience>
       </curriculum-vitae-content-block>
       <hr>
-      <curriculum-vitae-content-block title="Education">
+      <curriculum-vitae-content-block [title]="'COMMON.EDUCATION' | translate">
         @for (item of cv.education; track item.specialty) {
           <div class="row mb-3">
             <div class="col-sm-12 col-md-4">
               <curriculum-vitae-dates-block [dates]="[item.start, item.end]"></curriculum-vitae-dates-block>
             </div>
             <div class="col-sm-12 col-md-8">
-              <p class="m-0 fw-bold">{{ item.specialty }}</p>
-              <small>{{ item.establishment }}</small>
+              <p class="m-0 fw-bold">{{ item.specialty | translate }}</p>
+              <small>{{ item.establishment | translate }}</small>
             </div>
           </div>
         }
       </curriculum-vitae-content-block>
       <hr>
-      <curriculum-vitae-content-block title="Languages">
-        <p>English - B1</p>
-        <p>Ukrainian - Native</p>
+      <curriculum-vitae-content-block [title]="'COMMON.LANGUAGES' | translate">
+        <p>{{ 'English' | translate }} - B1</p>
+        <p>{{ 'Ukrainian' | translate }} - {{ 'Native' | translate }}</p>
       </curriculum-vitae-content-block>
       <hr>
-      <curriculum-vitae-content-block title="Certifications">
+      <curriculum-vitae-content-block [title]="'COMMON.CERTIFICATIONS' | translate">
         @for (certification of cv.certifications; track certification.id) {
           <div class="row mb-3">
             <div class="col-sm-12 col-md-4">
-              <span class="d-block mb-2">{{ certification.issueDate | date: midDateFormat }}</span>
+              <span class="d-block mb-2">{{ certification.issueDate | date: midDateFormat:zone:lang }}</span>
             </div>
             <div class="col-sm-12 col-md-8">
               <a class="text-decoration-none text-body" [href]="certification.validationUrl" target="_blank">

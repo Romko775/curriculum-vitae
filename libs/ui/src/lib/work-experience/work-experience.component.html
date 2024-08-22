@@ -1,7 +1,7 @@
 @for (exp of workExperience; track exp.dates) {
   <div class="mb-4 work-experience-block">
     <div class="row d-flex align-center">
-      <div class="col-sm-6 col-md-8"><h3 class="fs-4" style="color: #8A0000">{{ exp.company }}</h3></div>
+      <div class="col-sm-6 col-md-8"><h3 class="fs-4" style="color: #8A0000">{{ exp.company | translate }}</h3></div>
       <div class="col-sm-6 col-md-4 text-md-end">
         <curriculum-vitae-dates-block [dates]="exp.dates" [dateFormat]="dateFormat"></curriculum-vitae-dates-block>
       </div>
@@ -10,8 +10,8 @@
       <h4 class="fs-6">
         <a class="link-dark" [href]="exp.project.url" target="_blank">{{ exp.project.name }}</a> - {{ exp.position }}
       </h4>
-      <p>{{ exp.description }}</p>
-      <curriculum-vitae-titled-list [title]="'Responsibilities'"
+      <p>{{ exp.description | translate }}</p>
+      <curriculum-vitae-titled-list [title]="'COMMON.RESPONSIBILITIES' | translate"
                                     [items]="exp.responsibilities"></curriculum-vitae-titled-list>
       <curriculum-vitae-stack-block [stackItems]="exp.stack"></curriculum-vitae-stack-block>
     </div>

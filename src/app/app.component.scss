@@ -9,7 +9,29 @@
     display: block;
   }
 
+  .not-printable {
+    display: none;
+  }
+
   .container {
     max-width: 100%;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: end;
+  padding-top: 16px;
+  gap: 16px;
+
+  ng-select {
+    width: min(100%, 160px);
+  }
+
+  .print__btn {
+    --bs-btn-line-height: 1;
+    --bs-btn-border-color: #ccc;
+    --bs-btn-color: #333;
+    --bs-border-radius: 0.3rem;
   }
 }
