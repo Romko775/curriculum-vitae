@@ -49,7 +49,7 @@ export const CV: CVModel = {
   workExperience: [
     {
       company: 'Repetry',
-      dates: ['01 Apr 2024', null],
+      dates: ['01 Apr 2024', '01 Sep 2024'],
       project: {
         name: 'Repetry',
         url: '#'
@@ -68,7 +68,7 @@ export const CV: CVModel = {
         { type: 'script', name: 'Typescript' },
         { type: 'angular', name: 'Angular (v17)' },
         { type: 'style', name: 'Angular Material' },
-        { type: 'util', name: 'Ngrx' },
+        { type: 'script', name: 'Jasmine' }
       ]
     },
     {
